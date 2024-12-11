@@ -10,6 +10,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 // Utilities
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
+import { VitePluginRadar } from 'vite-plugin-radar'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -45,6 +46,11 @@ export default defineConfig({
       vueTemplate: true,
     }),
     vueDevTools(),
+    VitePluginRadar({
+      analytics: {
+        id: 'G-4T0PY7LX1T',
+      },
+    }),
   ],
   define: { 'process.env': {} },
   resolve: {

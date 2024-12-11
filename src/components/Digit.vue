@@ -74,12 +74,12 @@ defineProps({
       return ''
     },
   },
-  color: {
-    type: String,
-    default() {
-      return 'white'
-    },
-  },
+  // color: {
+  //   type: String,
+  //   default() {
+  //     return ''
+  //   },
+  // },
 })
 </script>
 
@@ -92,5 +92,8 @@ path,circle
   fill: transparent
   &.active
     // v-bind 把 CSS 的值和 Vue 的變數綁定
-    fill: v-bind(color)
+    // fill: v-bind(color)
+    fill: red
+// .figit-a
+//   fill: yellow
 </style>
