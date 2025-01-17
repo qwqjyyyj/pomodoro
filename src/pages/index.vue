@@ -11,10 +11,21 @@
         <v-btn
           icon="mdi-play"
           :disabled="status === STATUS.COUNTING || (current.length === 0 && items.length === 0)"
+          style="background-color: orangered;"
           @click="startTimer"
         ></v-btn>
-        <v-btn icon="mdi-pause" :disabled="status !== STATUS.COUNTING" @click="pauseTimer"></v-btn>
-        <v-btn icon="mdi-skip-next" :disabled="current.length === 0" @click="finishTimer"></v-btn>
+        <v-btn
+        icon="mdi-pause"
+        :disabled="status !== STATUS.COUNTING"
+        style="background-color: darkorange;"
+        @click="pauseTimer"
+        ></v-btn>
+        <v-btn
+        icon="mdi-skip-next"
+        :disabled="current.length === 0"
+        style="background-color: orange;"
+        @click="finishTimer"
+        ></v-btn>
       </v-col>
     </v-row>
   </v-container>

@@ -12,6 +12,7 @@
           label="新增事項"
           clearable
           :rules="[rules.required, rules.length]"
+          style="color: #001F3D;"
           @keydown.enter="onInputSubmit"
           @click:append="onInputSubmit"
         ></v-text-field>

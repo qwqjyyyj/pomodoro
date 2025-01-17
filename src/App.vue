@@ -1,14 +1,14 @@
 <template>
   <v-app>
-    <v-app-bar>
+    <v-app-bar style="background-color: #001F3D;">
       <v-container class="d-flex align-center">
-        <v-app-bar-title>番茄鐘</v-app-bar-title>
+        <v-app-bar-title style="color: #FFBB77;font-weight: bold;font-size: 1.8rem;">番茄鐘</v-app-bar-title>
         <v-btn prepend-icon="mdi-home" to="/">首頁</v-btn>
         <v-btn prepend-icon="mdi-format-list-bulleted" to="/list">事項</v-btn>
         <v-btn prepend-icon="mdi-cog" to="/setting">設定</v-btn>
       </v-container>
     </v-app-bar>
-    <v-main>
+    <v-main style="background-image: url('/public/pexels-sebastian-189349.jpg');background-size: cover; background-position: center;">
       <!--
         slot = 插槽 = 自訂元件內的某部分 HTML
         v-slot="元件插槽提供的可用變數"
