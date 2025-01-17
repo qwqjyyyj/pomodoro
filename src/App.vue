@@ -8,7 +8,7 @@
         <v-btn prepend-icon="mdi-cog" to="/setting">設定</v-btn>
       </v-container>
     </v-app-bar>
-    <v-main style="background-image: url('/public/pexels-sebastian-189349.jpg');background-size: cover; background-position: center;">
+    <v-main style="background-image: url('https://raw.githubusercontent.com/qwqjyyyj/pomodoro/refs/heads/main/public/pexels-sebastian-189349.jpg');background-size: cover; background-position: center;">
       <!--
         slot = 插槽 = 自訂元件內的某部分 HTML
         v-slot="元件插槽提供的可用變數"
